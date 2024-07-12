@@ -1,0 +1,4 @@
+<h1>WINNER: {{winner?.name ?? 'None'}}</h1>
+<h3 *ngIf="winner == null">DRAW</h3>
+
+<button mat-raised-button (click)="startNewGame()">Start new game</button>

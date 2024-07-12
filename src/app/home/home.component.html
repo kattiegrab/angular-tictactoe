@@ -1,0 +1,26 @@
+<div class="container">
+	<h1>Welcome to Tic Tac Toe Game</h1>
+
+	<mat-card appearance="outlined" *ngIf="showAlert">
+		<mat-card-content>
+			<p>Please set up player names first</p>
+			<mat-icon aria-hidden="false" aria-label="Error icon" fontIcon="error"></mat-icon>
+		</mat-card-content>
+
+	</mat-card>
+
+	<mat-form-field appearance="fill">
+		<mat-label>Player 1 name</mat-label>
+		<input matInput required [(ngModel)]="player1Name">
+	</mat-form-field>
+
+	<mat-form-field appearance="fill">
+		<mat-label>Player 2 name</mat-label>
+		<input matInput required [(ngModel)]="player2Name">
+	</mat-form-field>
+
+	<div class="buttons">
+		<button *ngIf="gameStarted" mat-button (click)="clearGame()">Clear Game</button>
+		<button mat-raised-button (click)="setupGame()">Next</button>
+	</div>
+</div>

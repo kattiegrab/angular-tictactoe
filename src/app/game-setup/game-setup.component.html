@@ -1,0 +1,30 @@
+<div class="container">
+	<h1>Welcome to Tic Tac Toe Game</h1>
+
+	<div class="players">
+		<mat-card appearance="outlined">
+			<mat-card-header>
+				<mat-card-title>Player 1</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+				<p>{{player1Name}}</p>
+				<p>Symbol: {{player1Symbol}}</p>
+			</mat-card-content>
+		</mat-card>
+
+		<mat-card appearance="outlined">
+			<mat-card-header>
+				<mat-card-title>Player 2</mat-card-title>
+			</mat-card-header>
+			<mat-card-content>
+				<p>{{player2Name}}</p>
+				<p>Symbol: {{player2Symbol}}</p>
+			</mat-card-content>
+		</mat-card>
+	</div>
+
+	<div class="buttons">
+		<button mat-button routerLink="/">Go back</button>
+		<button mat-flat-button routerLink="/game">Start game</button>
+	</div>
+</div>

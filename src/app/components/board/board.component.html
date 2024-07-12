@@ -1,0 +1,14 @@
+<main>
+	<p>Current Player: {{ player.name }} </p>
+	<p>Symbol: {{ player.symbol }} </p>
+
+
+	<div class="boxes-container">
+		<app-square
+			*ngFor="let val of squares; let i = index"
+			[value]="val"
+			(click)="makeMove(i)"
+			[disabled]="winner != null || winner != undefined">
+		</app-square>
+	</div>
+</main>
