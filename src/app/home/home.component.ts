@@ -7,7 +7,7 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatIcon } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Router } from '@angular/router';
-import { GameService } from '../services/game.service';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-home',

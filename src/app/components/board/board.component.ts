@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { Router } from '@angular/router';
-import { GameService, User } from '../../services/game.service';
+import { GameService, User } from '../../game.service';
 import { SquareComponent } from '../square/square.component';
 
 @Component({
@@ -58,7 +58,6 @@ export class BoardComponent implements OnInit {
 
     this.winner = this.calculateWinner();
     this.gameService.setWinner(this.winner);
-    console.log(this.winner);
     if (this.winner != null || emptySquares.length < 1) this.finishGame();
   }
 

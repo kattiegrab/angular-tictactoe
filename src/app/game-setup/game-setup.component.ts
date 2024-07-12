@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { Router, RouterModule } from '@angular/router';
-import { GameService } from '../services/game.service';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-game-setup',

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { MatButton } from '@angular/material/button';
 import { Router } from '@angular/router';
-import { GameService } from '../services/game.service';
+import { GameService } from '../game.service';
 
 @Component({
   selector: 'app-winner',
